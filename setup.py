@@ -88,14 +88,14 @@ setup(
         'pytest-runner',
     ],
     install_requires=[
-        'scikit-image>=0.12,<0.13',
-        'cairosvg>1,<2',
-        'elasticsearch>=2.3,<2.4',
+        'scikit-image>=0.12',
+        'elasticsearch>=5.0.0,<6.0.0',
     ],
     tests_require=tests_require,
     extras_require={
         'test': tests_require,
         'dev':  dev_require + tests_require + docs_require,
         'docs':  docs_require,
+        'extra': ['cairosvg>1,<2'],
     },
 )
